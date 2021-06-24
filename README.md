@@ -8,6 +8,7 @@ Tento repozitář specifikuje jak inicializovat proces registrace vlastních ele
 ```JavaScript
 /* global customElementsInitiator */
 /* *CE/WC* v0, see: https://github.com/IndigoMultimediaTeam/customElementsInitiator
+ *
  * … anothher docs/comments if needed …
  */
 (typeof customElementsInitiator==="function" ? customElementsInitiator : function customElementsInitiator(component, when= "now"){
