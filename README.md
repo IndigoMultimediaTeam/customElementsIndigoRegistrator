@@ -3,9 +3,12 @@ Vzor (pattern) pro generické registrování [Custom Elements (Web Components)](
 
 Tento repozitář specifikuje jak inicializovat proces registrace vlastních elementů. Komponenta by měla být definována uvnitř funkce `component` a tato fuknce by měla být volána funkcí **`customElementsInitiator`**.
 
-## V0
+## v0
 ```JavaScript
 /* global customElementsInitiator */
+/* *CE/WC* v0, see: https://github.com/IndigoMultimediaTeam/customElementsInitiator
+ * … anothher docs/comments if needed …
+ */
 (typeof customElementsInitiator==="function" ? customElementsInitiator : function customElementsInitiator(component, when= "now"){
     if(when==="DOMContentLoaded"&&document.readyState==="loading")
         return document.addEventListener(when, component.bind(this));
