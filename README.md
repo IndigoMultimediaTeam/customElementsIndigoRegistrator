@@ -17,7 +17,6 @@ Tento repozitář specifikuje jak inicializovat proces registrace vlastních ele
     component.call(this);
 })(function component(){ /* … */ }/*, when*/);
 ```
-Funkce `customElementsInitiator` akceptuje dva argumenty:
-- `customElementsInitiator` funkce, která reálně registruje *CE/WC* (vzorová defaultní definice [default_v0/customElementsInitiator.js](./default_v0/customElementsInitiator.js))
-- `component`  je „místo” pro vlastní kód definice webové komponenty (příklad viz [default_v0/example.js](./default_v0/example.js))
+Funkce `customElementsInitiator` iniciuje registraci *CE/WC* (vzorová defaultní definice [default_v0/customElementsInitiator.js](./default_v0/customElementsInitiator.js)) a akceptuje dva argumenty:
+- `component` je místo pro vlastní kód definice *CE/WC* (celý příklad viz [default_v0/example.js](./default_v0/example.js))
 - `when` nabývající hodnot `DOMContentLoaded`, nebo `now`
